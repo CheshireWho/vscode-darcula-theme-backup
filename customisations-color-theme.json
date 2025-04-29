@@ -1,0 +1,133 @@
+{
+  "workbench.colorTheme": "Webstorm Darcula 2022",
+  // https://code.visualstudio.com/api/references/theme-color
+  "workbench.colorCustomizations": {
+    // override colours only for this theme
+    // https://github.com/imekachi/webstorm-darcula/blob/master/themes/darcula-2022.json
+    "[Webstorm Darcula 2022]": {
+      "activityBarBadge.background": "#28a993",
+      "breadcrumb.background": "#3d3f41",
+      "editorGroupHeader.tabsBorder": "#323232",
+      "editorIndentGuide.background1": "#3d3d3d",
+      "editorOverviewRuler.findMatchForeground": "#51956c9f",
+      "input.border": "#686868",
+      "minimap.background": "#202020",
+      "minimap.findMatchHighlight": "#51956cbd",
+      "tab.border": "#323232",
+      "terminal.background": "#2b2b2b",
+      "titleBar.border": "#323232",
+      "tree.indentGuidesStroke": "#686868",
+      "tree.inactiveIndentGuidesStroke": "#525252"
+    }
+  },
+  // Use Scope Inspector to find semantic and textMate tokens (command: Inspect Editor Tokens and Scopes)
+  // https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector
+  "editor.semanticTokenColorCustomizations": {
+    "[Webstorm Darcula 2022]": {
+      "rules": {
+        // TypeScript types and interfaces
+        "interface": "#7A9EC2",
+        "type": "#7A9EC2",
+        "typeParameter": "#66bdb5"
+      }
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Webstorm Darcula 2022]": {
+      "textMateRules": [
+        {
+          "name": "JSX custom component tags but not native tags",
+          "scope": ["support.class.component.tsx", "support.class.component.js"],
+          "settings": {
+            "foreground": "#26bda4"
+          }
+        },
+        {
+          "name": "TypeScript value for a type key when defining the type inline",
+          "scope": ["variable.other.readwrite.ts"],
+          "settings": {
+            "foreground": "#c77632"
+          }
+        },
+        {
+          "name": "String Interpolation Begin and End (regular and styled-components)",
+          "scope": [
+            "punctuation.definition.template-expression.begin",
+            "punctuation.definition.template-expression.end",
+            "punctuation.definition.template-expression.begin.js",
+            "punctuation.definition.template-expression.end.js"
+          ],
+          "settings": {
+            "foreground": "#be973d"
+          }
+        },
+        {
+          "name": "Markdown: heading defintion (the #)",
+          "scope": ["punctuation.definition.heading.markdown"],
+          "settings": {
+            "foreground": "#cb7732"
+          }
+        },
+        {
+          "name": "Markdown: heading",
+          "scope": ["markup.heading.markdown"],
+          "settings": {
+            "foreground": "#9876aa",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Markdown: inline code string (the 'foo' in 'abc `foo` def')",
+          "scope": ["markup.inline.raw.string.markdown"],
+          "settings": {
+            "foreground": "#6a8759"
+          }
+        },
+        {
+          "name": "Markdown: inline code punctuation (the backticks in 'abc `foo` def')",
+          "scope": ["punctuation.definition.raw.markdown"],
+          "settings": {
+            "foreground": "#cb7732"
+          }
+        },
+        {
+          "name": "Markdown: text in code block (e.g. text in a JSX component)",
+          "scope": ["markup.fenced_code.block.markdown"],
+          "settings": {
+            "foreground": "#a6b3c2"
+          }
+        },
+        {
+          "name": "Markdown: the brackets of link titles and descriptions",
+          "scope": [
+            "punctuation.definition.link.title.begin.markdown",
+            "punctuation.definition.link.title.end.markdown",
+            "punctuation.definition.link.description.begin.markdown",
+            "punctuation.definition.link.description.end.markdown"
+          ],
+          "settings": {
+            "foreground": "#cb7732"
+          }
+        },
+        {
+          "name": "Markdown: link titles and descriptions",
+          "scope": ["string.other.link.title.markdown", "string.other.link.description.markdown"],
+          "settings": {
+            "foreground": "#3d9ffd"
+          }
+        },
+        {
+          "name": "Markdown: punctuation for bold, italic, strikethrough",
+          "scope": [
+            "punctuation.definition.bold.markdown",
+            "punctuation.definition.italic.markdown",
+            "punctuation.definition.strikethrough.markdown"
+          ],
+          "settings": {
+            "foreground": "#cb7732"
+          }
+        }
+      ]
+    }
+  }
+}
